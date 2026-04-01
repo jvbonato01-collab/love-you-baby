@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>1 Ano com Você ❤️</title>
+
   <style>
     body {
       margin: 0;
@@ -53,21 +54,25 @@
     }
   </style>
 </head>
+
 <body>
 
+  <audio id="musica" loop>
+    <source src="Tyler, The Creator - See You Again (Audio) ft. Kali Uchis.mp3" type="audio/mpeg">
+  </audio>
+
   <div class="container">
-    <h1>EU TE AMO ❤️</h1>
-    
+    <h1>Feliz 1 Ano ❤️</h1>
+
     <div class="heart">💖</div>
-
+<p>
+   ja completou 1 ano desde que você entrou na minha vida… e, sem nem perceber,
+  transformou tudo em algo muito mais bonito. Desde então, meus dias ficaram
+  mais leves, meus sorrisos mais sinceros e meu coração… bom, ele decidiu que
+  agora só quer você 💖
+</p>
     <p>
-      faz 1 ano e  desde que você entrou na minha vida e simplesmente
-      transformou tudo na minha vida.
-    </p>
-
-    <p>
-      Obrigado por existir, por me aguentar (principalmente isso kkk),
-      e por fazer meus dias muito mais felizes.
+      Obrigado por tudo, por cada risada, cada momento e por estar comigo.
     </p>
 
     <p><strong>Eu te amo ❤️</strong></p>
@@ -75,15 +80,19 @@
     <button onclick="mostrarMensagem()">Clica aqui 👀</button>
 
     <p id="mensagem"></p>
+
+    <p><em>(clica em qualquer lugar da tela 👀)</em></p>
   </div>
-  <audio id="Tyler, The Creator - See You Again (Audio) ft. Kali Uchis.mp3" loop>
-    <source src="Tyler, The Creator - See You Again (Audio) ft. Kali Uchis.mp3" "type=audio/mpeg">
-  </audio>
 
   <script>
+    document.addEventListener("click", function() {
+      let musica = document.getElementById("musica");
+      musica.play();
+    }, { once: true });
+
     function mostrarMensagem() {
       document.getElementById("mensagem").innerText =
-        "Você é a melhor coisa que já me aconteceu 💖";
+        "Você é a melhor coisa que já me aconteceu ❤️";
     }
   </script>
 
