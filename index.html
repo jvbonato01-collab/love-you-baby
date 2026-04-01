@@ -114,23 +114,6 @@
         "Você é a melhor coisa que já me aconteceu ❤️";
     }
   </script>
-  function criarCoracao() {
-  const coracao = document.createElement("div");
-  coracao.classList.add("heart-float");
-  coracao.innerText = "💖";
-
-  coracao.style.left = Math.random() * 100 + "vw";
-  coracao.style.fontSize = (Math.random() * 20 + 20) + "px";
-
-  document.body.appendChild(coracao);
-
-  setTimeout(() => {
-    coracao.remove();
-  }, 4000);
-}
-
-// cria vários corações automaticamente
-setInterval(criarCoracao, 300);
 
 </body>
 </html>
