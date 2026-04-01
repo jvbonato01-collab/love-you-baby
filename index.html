@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>1 Ano com Você ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+    }
 
+    .container {
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.3em;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .heart {
+      font-size: 50px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      color: #ff4d6d;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #ffe6eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>EU TE AMO ❤️</h1>
+    
+    <div class="heart">💖</div>
+
+    <p>
+      faz 1 ano e  desde que você entrou na minha vida e simplesmente
+      transformou tudo na minha vida.
+    </p>
+
+    <p>
+      Obrigado por existir, por me aguentar (principalmente isso kkk),
+      e por fazer meus dias muito mais felizes.
+    </p>
+
+    <p><strong>Eu te amo ❤️</strong></p>
+
+    <button onclick="mostrarMensagem()">Clica aqui 👀</button>
+
+    <p id="mensagem"></p>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").innerText =
+        "Você é a melhor coisa que já me aconteceu 💖";
+    }
+  </script>
+
+</body>
+</html>
